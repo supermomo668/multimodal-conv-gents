@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "multimodal-json"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10, <3.13"  # Adjusted to prevent going to Python 3.13 or higher
+beartype = "^0.18.5"
+langchain = "^0.1.17"
+pyautogen = {extras = ["retrievechat"], version = "^0.2.27"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

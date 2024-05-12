@@ -1,0 +1,25 @@
+{
+    "questionBank": [
+      {
+        "question": "I'm looking to understand the genetic predisposition for longevity. Which agent should I consult to retrieve detailed genetic information and associated metabolic pathways?",
+        "answer": "Genetics Genie"
+      },
+      {
+        "question": "Who can help me find information on the latest clinical trials for a new Alzheimer's drug currently in Phase II?",
+        "answer": "Clinical Trials Genie"
+      },
+      {
+        "question": "I need to explore drugs that extend lifespan in model organisms like mice and fruit flies. Which agent would provide the most comprehensive data?",
+        "answer": "DrugAge Genie"
+      },
+      {
+        "question": "I want to compare the efficacy of different clinical trials for breast cancer treatments concluded in the past five years. Which Genie is best equipped to assist?",
+        "answer": "Clinical Trials Genie"
+      },
+      {
+        "question": "I'm looking for a detailed explanation of the rsid_lookup API and how it relates to SNP data analysis. Which Genie should I use?",
+        "answer": "Genetics Genie"
+      }
+    ]
+  }
+  

@@ -1,5 +1,13 @@
 # Multimodal Vision Agent
 
+## Dialogue Package  [On-going]
+In `dialogue/`, run pipeline by `dialogue/main.py` to execute conversation generation.
+For example:
+```
+$projects/agent
+python -m dialogue.main --config-path=../configs --config-name=default
+```
+
 ### Customization Notes
 
 **Data Preparation**: Adapt the data preparation step within `compute_vision_metrics` to convert your model’s predictions and the associated metadata (e.g., queries, goals, screenshots) into a DataFrame format compatible with `GPTVScorer`.

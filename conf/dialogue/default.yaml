@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - characters
+  - system_prompts
+
+# Add your LLM config here
+llm_config: 
+  cache_seed: 42
+  temperature: 0
+  timeout: 120
+  
+podcast:
+  host: ${characters.host}  # Reference to host in characters.yaml
+  guests: ${characters.guests}  # Reference to guests in characters.yaml
+
+system_prompts: ${system_prompts}  # Reference to system_prompts.yaml

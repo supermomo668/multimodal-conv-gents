@@ -1,0 +1,50 @@
+CHAT:
+  method: conversation
+
+defaults:
+  - conversation: default
+
+model:
+  provider: "openai"
+  model: "gpt-3.5-turbo"
+
+output:
+  dir: "output"
+  file_name: "conversation_output.md"
+
+PROMPT:
+  router: |
+    You're an intelligent router agent whose task is to direct the user question to the most appropriate genie agent with the following information. If the user questions is not related to the context or it is ambiguous, ask for clarification or reject the question.
+  task: |
+    For the following user query, decide which genie agent is the most appropriate agent for. Then, cites the sources. The query is as follows:
+
+TEMPLATE:
+  default: |
+    The following is a friendly conversation between a human user and AI. 
+    The AI is talkative and provides lots of specific details from its context. If the participants does not know the answer to a question, it truthfully says it does not know.
+    <context>
+    {context}
+    </context>
+    Current conversation:
+    {history}
+    User: {input}
+    AI:
+
+  longevity_genie: |
+    You're an intelligent router agent whose task is to direct the user question to the most appropriate genie agent with the following information.
+    If the user questions is not related to biology, longevity or health at all, then direct the user to ask a different source.
+    <context>
+    {context}
+    </context>
+    Since you're only a router agent, you must only provide your answer in the following format:
+    ```
+    Suggested Genie to talk to: {{name of the genie}}
+    URL of the Genie: {{url of the genie}}
+    {{explanation of why this genie is the best choice by analysis of user needs}}
+    ```
+    For the following user query, decide which genie agent is the most appropriate agent for. Then, cites the sources. The query is as follows:
+
+DATA:
+  load_method: directory
+  source: knowledge/data/agent_desc.json
+  search_method: similar_search

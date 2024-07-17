@@ -1,0 +1,371 @@
+{
+    "type": "news",
+    "query": {
+        "original": "whatmeeting agenda and conclusions in the latest FOMC meeting?",
+        "altered": "what meeting agenda and conclusions in the latest fomc meeting?",
+        "spellcheck_off": false,
+        "show_strict_warning": false
+    },
+    "results": [
+        {
+            "type": "news_result",
+            "title": "Federal Reserve Board - News & Events",
+            "url": "https://www.federalreserve.gov/newsevents.htm",
+            "description": "The Federal Reserve Board of Governors in Washington DC.",
+            "age": "1 day ago",
+            "page_age": "2024-07-12T07:30:04",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "federalreserve.gov",
+                "hostname": "www.federalreserve.gov",
+                "favicon": "https://imgs.search.brave.com/5sxAzDegzxMnM4HyooqQAzsKXH8k9-QrTmN63ILzGFE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDdlNmIzZGMy/OWQ5ZGZlNjY4NjZm/YmVhYWJiOTNlMDI5/Zjk0ZDg2YTExY2Nh/NzQyZmVjYWI3ZTUz/YzU1ZDkxYS93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292Lw",
+                "path": "\u203a newsevents.htm"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/s-mo0MBKbFL44TBZkQVs-wKCxXOAYQZTfkkIwHDoKlE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292L2ltYWdl/cy9zb2NpYWwtbWVk/aWEvc29jaWFsLWRl/ZmF1bHQtaW1hZ2Ut/b3BlbmdyYXBoLmpw/Zw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Meetings of the Governing Council and the General Council",
+            "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+            "description": "Browse schedules for the meetings of the Governing Council and General Council of the ECB and related press conferences.",
+            "age": "3 days ago",
+            "page_age": "2024-07-10T18:46:08",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "ecb.europa.eu",
+                "hostname": "www.ecb.europa.eu",
+                "favicon": "https://imgs.search.brave.com/O0NxNKL0fCfQ2bo4I8rkscU7UaKTcVv8F75joCDZYjo/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTI4MWIwMTM2/Nzc0ODMxZDdmNzI1/NjYzNzEzNzQ1ODVk/MzYxNDk2ZjAwMjBl/NDg2MjlkN2M5MDNi/NWFmNTMwNC93d3cu/ZWNiLmV1cm9wYS5l/dS8",
+                "path": "\u203a press  \u203a calendars  \u203a mgcgc  \u203a html  \u203a index.en.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/8sL3fOFmTt-2qmMvQB2dIzA_eAQnepmEupEv3Hzu4tU/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZWNiLmV1cm9wYS5l/dS9wcmVzcy9jYWxl/bmRhcnMvc2hhcmVk/L2ltZy9zb2NpYWxt/ZWRpYS9zb2NpYWwt/ZGVmYXVsdC5qcGc_/MGFjOTYwZDA2ZjI4/MDgyZTcyNzU4Zjc3/MTUxMThhYzU"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "When\u2019s the next Federal Reserve meeting? The FOMC \u2014 and how it affects your finances",
+            "url": "https://www.aol.com/finance/when-is-next-fed-meeting-140116750.html",
+            "description": "The Fed meets 8 times a year to set monetary policy that affects how Americans borrow and save. Here's when its rate-setting committee meets next.",
+            "age": "3 days ago",
+            "page_age": "2024-07-10T10:27:06",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "aol.com",
+                "hostname": "www.aol.com",
+                "favicon": "https://imgs.search.brave.com/4p7dQMRUEQk92vnP8RDwAoArIAzUhKFruYUWpQscdnY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjZiZDhhODZj/ZGJhZTUwZmJhMTVl/MGNmNzVhNGQ2OGE0/OTUxOTYwNjc2NGUz/ZTkxMWJkZDcyOTA0/YWQ0ZjVlMS93d3cu/YW9sLmNvbS8",
+                "path": "\u203a finance  \u203a when-is-next-fed-meeting-140116750.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/oQ0C4SUiwPPqdXQDd7r6cdTgHcG5Z1zhvpNPO1Ze_zI/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL3Vm/bmFzczVpMk16OUdE/UXFOUDJmeGctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDNN/RGMtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjAtMDgvODcz/NDBkYzAtZTdkNC0x/MWVhLWI3M2MtZjIy/ZGVjNTY4NDhi"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Fed minutes: FOMC not ready to cut rates until 'greater confidence' inflation is moving to 2% goal",
+            "url": "https://www.cnbc.com/2024/07/03/fed-minutes-fomc-not-ready-to-cut-rates-until-greater-confidence-inflation-is-moving-to-2percent-goal.html",
+            "description": "The Federal Reserve on Wednesday released minutes from its June 11-12 meeting.",
+            "age": "1 week ago",
+            "page_age": "2024-07-03T18:08:31",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "cnbc.com",
+                "hostname": "www.cnbc.com",
+                "favicon": "https://imgs.search.brave.com/KUrlWAd6ODBBSGj5d32vnSDOYDoLCxwRTHNzWoWbgjE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+                "path": "\u203a 2024  \u203a 07  \u203a 03  \u203a fed-minutes-fomc-not-ready-to-cut-rates-until-greater-confidence-inflation-is-moving-to-2percent-goal.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/WjWnb99vYcrTOZ8w0-N_mk4pqFQ6TmrSUGt0RJJcpww/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDczNDczMjct/MTcwMjQ5NzM5OTIw/MjMtMTItMTN0MTk1/MTU3el8xMjg4OTY1/NTQ3X3JjMmp3NGFt/YzFucF9ydHJtYWRw/XzBfdXNhLWVjb25v/bXktZmVkLmpwZWc_/dj0xNzAyNTA0MjA3/JmFtcDt3PTE5MjAm/YW1wO2g9MTA4MA"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "FOMC meeting minutes: vast majority saw the growth gradually cooling | Forexlive",
+            "url": "https://www.forexlive.com/centralbank/fomc-meeting-minutes-vast-majority-saw-the-growth-gradually-cooling-20240703/",
+            "description": "Discover insights from the latest FOMC meeting minutes where the majority of participants anticipate a slowdown in economic growth. Find out how policy may respond to unexpected weaknesses and inflation challenges.",
+            "age": "1 week ago",
+            "page_age": "2024-07-03T18:03:50",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "forexlive.com",
+                "hostname": "www.forexlive.com",
+                "favicon": "https://imgs.search.brave.com/2p_cclb6DOCAfPc2N_syALswwMHo0IxTiy9H_rO3nSE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOWRkOTkyMjMz/ZDQ5OWE2ZDNlZDVj/NDkyOTMzZmY1OTdj/MzUwOWYyZjEzNDdi/MjU1MDBiOGI3NmY1/YzU4ZWYyYi93d3cu/Zm9yZXhsaXZlLmNv/bS8",
+                "path": "\u203a centralbank  \u203a fomc-meeting-minutes-vast-majority-saw-the-growth-gradually-cooling-20240703"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/MAKdiH1zDVY1bvVdI4P4cXPIjgnYlTVokDzYXHEmSrI/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZm9yZXhsaXZl/LmNvbS9mbC1zdGF0/aWMvZmwtdGh1bWJu/YWlsLmpwZw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "US Federal Reserve's Federal Open Market Committee meeting FOMC minutes release date, time - Investing Abroad News | The Financial Express",
+            "url": "https://www.financialexpress.com/business/investing-abroad-us-federal-reserves-fomc-meeting-minutes-to-be-released-today-3542274/",
+            "description": "The Fed is cognizant of the upcoming November presidential election, in addition to the maze of economic data over the next few months.",
+            "age": "1 week ago",
+            "page_age": "2024-07-03T07:43:45",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "financialexpress.com",
+                "hostname": "www.financialexpress.com",
+                "favicon": "https://imgs.search.brave.com/029hl4xxxpUHE4bMX_Bs4Pzyajye4sXkc2VNxLxljeY/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOThkNjBkZGQ5/ODkxOTk5MTM2Nzhj/ODQwYmIyNjU2ODJm/MTJlZDIzM2RlOTcw/ZjA3YzIyNzJjMWNi/ZTA3YThiZC93d3cu/ZmluYW5jaWFsZXhw/cmVzcy5jb20v",
+                "path": "\u203a business  \u203a investing-abroad-us-federal-reserves-fomc-meeting-minutes-to-be-released-today-3542274"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/UgTepk38n9m5WqAsaEqxClAn7ftMho2Jn8SibgGPbKg/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZmluYW5jaWFsZXhw/cmVzcy5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDcv/UkVVVEVSUy1NQVJL/RVQuanBn"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Federal Reserve Board - Federal Reserve Board and Federal Open Market Committee release economic projections from the June 11-12 FOMC meeting",
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240612b.htm",
+            "description": "The attached tables and charts released on Wednesday summarize the economic projections made by Federal Open Market Committee participants in conjunction with",
+            "age": "1 month ago",
+            "page_age": "2024-06-13T15:00:02",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "federalreserve.gov",
+                "hostname": "www.federalreserve.gov",
+                "favicon": "https://imgs.search.brave.com/5sxAzDegzxMnM4HyooqQAzsKXH8k9-QrTmN63ILzGFE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDdlNmIzZGMy/OWQ5ZGZlNjY4NjZm/YmVhYWJiOTNlMDI5/Zjk0ZDg2YTExY2Nh/NzQyZmVjYWI3ZTUz/YzU1ZDkxYS93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292Lw",
+                "path": "\u203a newsevents  \u203a pressreleases  \u203a monetary20240612b.htm"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/s-mo0MBKbFL44TBZkQVs-wKCxXOAYQZTfkkIwHDoKlE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292L2ltYWdl/cy9zb2NpYWwtbWVk/aWEvc29jaWFsLWRl/ZmF1bHQtaW1hZ2Ut/b3BlbmdyYXBoLmpw/Zw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "The Fed - June 11-12, 2024 FOMC Meeting",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20240612.htm",
+            "description": "The Federal Reserve Board of Governors in Washington DC.",
+            "age": "1 month ago",
+            "page_age": "2024-06-13T05:20:03",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "federalreserve.gov",
+                "hostname": "www.federalreserve.gov",
+                "favicon": "https://imgs.search.brave.com/5sxAzDegzxMnM4HyooqQAzsKXH8k9-QrTmN63ILzGFE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDdlNmIzZGMy/OWQ5ZGZlNjY4NjZm/YmVhYWJiOTNlMDI5/Zjk0ZDg2YTExY2Nh/NzQyZmVjYWI3ZTUz/YzU1ZDkxYS93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292Lw",
+                "path": "\u203a monetarypolicy  \u203a fomcpresconf20240612.htm"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/s-mo0MBKbFL44TBZkQVs-wKCxXOAYQZTfkkIwHDoKlE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292L2ltYWdl/cy9zb2NpYWwtbWVk/aWEvc29jaWFsLWRl/ZmF1bHQtaW1hZ2Ut/b3BlbmdyYXBoLmpw/Zw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Fed Watch Live Blog: Federal Reserve Holds Rates Steady, Expects Only 1 Rate Cut This Year - CNET",
+            "url": "https://www.cnet.com/personal-finance/banking/federal-reserve-meeting-live-blog-june-2024/",
+            "description": "Here's what the latest economic reports mean for your money.",
+            "age": "1 month ago",
+            "page_age": "2024-06-12T23:31:00",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "cnet.com",
+                "hostname": "www.cnet.com",
+                "favicon": "https://imgs.search.brave.com/ZwovFXGDySMX0LyuHWStwIKLyrkAZ7YYd3h7GXJT_PU/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWVkNmIyYmM4/MmJlODJlZDJjYTBh/MWE2MmMwMmVkOTdk/OThhMmU4ZjE0MTY4/MzAxYTcyNjI5OGI5/OGJhN2NmYS93d3cu/Y25ldC5jb20v",
+                "path": "\u203a personal-finance  \u203a banking  \u203a federal-reserve-meeting-live-blog-june-2024"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/p8IYE6yztRxKVmn0W3a3MDgeIZuHg89ly7tDw2Rj0Xg/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/Y25ldC5jb20vYS9p/bWcvcmVzaXplLzEx/NWM2ZjhhNWYyNzkx/ODcwZWMyNWZhOWY5/ZjVmNmFkYWRjN2Yy/MGQvaHViLzIwMjQv/MDYvMTIvMmY3MGNm/MzgtNDFiNS00OTFj/LWI3ZDgtYzE4OTg1/MWQ4ZGE0L2NvcHkt/b2YtbW9uZXktaGVh/ZHNob3RzLTI0MDQz/MC0xLnBuZz9hdXRv/PXdlYnAmZml0PWNy/b3AmaGVpZ2h0PTY3/NSZ3aWR0aD0xMjAw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Next Fed Meeting: When It Is in July and What To Expect",
+            "url": "https://www.investopedia.com/next-fed-meeting-7551561",
+            "description": "The Fed raised rates several times in 2022 and 2023 to combat inflation before pausing for several months. Are they likely to begin cutting rates in 2024?",
+            "age": "1 month ago",
+            "page_age": "2024-06-12T19:10:03",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "investopedia.com",
+                "hostname": "www.investopedia.com",
+                "favicon": "https://imgs.search.brave.com/UPGuj-pwMdPn30IsoFnYQqnd4GcXKbgvdsveByWR8ZE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzdiMDU5YmM2/NDE0MjY3N2VmMTQ2/N2JiY2Y3MTgwMDk0/ZjdlOGU3MDUzZTBk/M2UxMTAwODFmYjcz/NTA3ODc2Zi93d3cu/aW52ZXN0b3BlZGlh/LmNvbS8",
+                "path": "\u203a next-fed-meeting-7551561"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/FW41X1Mqso0WJlqI_Ci5gKd7lriW4QAElorIYKx5DeM/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/aW52ZXN0b3BlZGlh/LmNvbS90aG1iL2FE/QWVPVG9reS0wRkJ1/WmZXVUMzUF9jOEtp/QT0vMTUwMHgwL2Zp/bHRlcnM6bm9fdXBz/Y2FsZSgpOm1heF9i/eXRlcygxNTAwMDAp/OnN0cmlwX2ljYygp/L0dldHR5SW1hZ2Vz/LTE1MDAzNDAzNzMt/OWE5MTY2ZTA0YjA2/NGYxZDkyNjA2NjM0/MWE1ZTI3ZjguanBn"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Fed recap: Chair Powell explains why the central bank isn't ready yet to cut rates",
+            "url": "https://www.cnbc.com/2024/06/12/fed-meeting-today-live-updates-on-june-fed-rate-decision.html",
+            "description": "Central bank policymakers kept rates steady, as expected. They also noted that there has been \u201cmodest\u201d progress on inflation.",
+            "age": "June 12, 2024",
+            "page_age": "2024-06-12T17:03:36",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "cnbc.com",
+                "hostname": "www.cnbc.com",
+                "favicon": "https://imgs.search.brave.com/KUrlWAd6ODBBSGj5d32vnSDOYDoLCxwRTHNzWoWbgjE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+                "path": "\u203a 2024  \u203a 06  \u203a 12  \u203a fed-meeting-today-live-updates-on-june-fed-rate-decision.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/48zuFIUN2ePCae5y3mkqD5NoYYd6OmTuP0t1SRZsbXY/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDc0MDkwNjMt/MTcxNDU5MDk3NjIw/MjQtMDUtMDF0MTkx/NTEwel8xMDEyMDE5/MDU2X3JjMnZoN2E0/NDhldV9ydHJtYWRw/XzBfdXNhLWVjb25v/bXktZmVkLmpwZWc_/dj0xNzE0NTkxMDEz/JmFtcDt3PTE5MjAm/YW1wO2g9MTA4MA"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "US Fed Meeting Outcome LIVE Updates: Powell-led FOMC likely to hold status quo on interest rate; CPI flat in May",
+            "url": "https://www.livemint.com/economy/us-fed-meeting-outcome-live-updates-powell-led-fomc-policy-decision-today-12-june-us-fed-interest-rate-us-economy-11718190385053.html",
+            "description": "US Fed Meeting Outcome Highlights: Jerome Powell-led rate-setting panel has kept interest rates steady at the 23-year high-mark for seven consecutive policy meetings since July 2023.",
+            "age": "June 12, 2024",
+            "page_age": "2024-06-12T11:37:38",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "livemint.com",
+                "hostname": "www.livemint.com",
+                "favicon": "https://imgs.search.brave.com/BEFj2oPq34J0cZhpZVdHez8fhstlSmyuw_Wbs8sbzOA/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvY2I4ZTJlOGVi/MTNmYmU4OGNhZGE1/NDQ0NmQyNDVjZTA0/YTAyYzNmYTdmZGU5/YmYxOWI2OTk1NmFm/NDY2NTJkMi93d3cu/bGl2ZW1pbnQuY29t/Lw",
+                "path": "\u203a economy  \u203a us-fed-meeting-outcome-live-updates-powell-led-fomc-policy-decision-today-12-june-us-fed-interest-rate-us-economy-11718190385053.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/ChuP6xmmhHjst0dNbRCUKYVWp9K6OsNEkyw-H4PBKLo/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/bGl2ZW1pbnQuY29t/L2xtLWltZy9pbWcv/MjAyNC8wNi8xMy8x/NjAweDkwMC8yLTAt/OTk0MjcyNDUtRmVk/ZXJhbFJlc2VydmUt/NEMtLTBfMTY4MTcx/MDI4MTUxM18xNzE4/MjM5MDMzNTE1Lmpw/Zw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "us fed meeting: Latest News & Videos, Photos about us fed meeting | The Economic Times - Page 1",
+            "url": "https://economictimes.indiatimes.com/topic/us-fed-meeting",
+            "description": "us fed meeting Latest Breaking News, Pictures, Videos, and Special Reports from The Economic Times. us fed meeting Blogs, Comments and Archive News on Economictimes.com",
+            "age": "June 12, 2024",
+            "page_age": "2024-06-12T09:00:03",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "economictimes.indiatimes.com",
+                "hostname": "economictimes.indiatimes.com",
+                "favicon": "https://imgs.search.brave.com/IeWOfqIuiDr-7FDEu-R9cMahu2f8rac_BX2KvUWwgfI/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTBkNWExNTY2/YmU0YWQxMDZlZGI5/ZjY5ZWE2ODlhMWI0/YmM5MDZhYzVlYmUz/M2UwNjI3YWQzZDNm/N2RmZmIyYy9lY29u/b21pY3RpbWVzLmlu/ZGlhdGltZXMuY29t/Lw",
+                "path": "\u203a topic  \u203a us-fed-meeting"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/gtB7rbo6MpOY8HFg3mll14N7oQ5RHrwErT9HqKYSwPI/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWcu/ZXRpbWcuY29tL3Ro/dW1iL21zaWQtNjU0/OTgwMjksd2lkdGgt/NjcyLHJlc2l6ZW1v/ZGUtNC9ldC1sb2dv/LmpwZw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "The Fed - Meeting calendars and information",
+            "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+            "description": "The Federal Reserve Board of Governors in Washington DC.",
+            "age": "June 12, 2024",
+            "page_age": "2024-06-12T07:35:02",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "federalreserve.gov",
+                "hostname": "www.federalreserve.gov",
+                "favicon": "https://imgs.search.brave.com/5sxAzDegzxMnM4HyooqQAzsKXH8k9-QrTmN63ILzGFE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDdlNmIzZGMy/OWQ5ZGZlNjY4NjZm/YmVhYWJiOTNlMDI5/Zjk0ZDg2YTExY2Nh/NzQyZmVjYWI3ZTUz/YzU1ZDkxYS93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292Lw",
+                "path": "\u203a monetarypolicy  \u203a fomccalendars.htm"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/s-mo0MBKbFL44TBZkQVs-wKCxXOAYQZTfkkIwHDoKlE/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/ZmVkZXJhbHJlc2Vy/dmUuZ292L2ltYWdl/cy9zb2NpYWwtbWVk/aWEvc29jaWFsLWRl/ZmF1bHQtaW1hZ2Ut/b3BlbmdyYXBoLmpw/Zw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Fed meeting and inflation report both hit Wednesday, and the impact could be huge",
+            "url": "https://www.cnbc.com/2024/06/11/fed-meeting-and-inflation-report-both-hit-wednesday-and-the-impact-could-be-huge.html",
+            "description": "A one-two punch starts in the morning with the pivotal consumer price index reading for May, ending with the Fed's policy meeting in the afternoon",
+            "age": "June 11, 2024",
+            "page_age": "2024-06-11T18:03:13",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "cnbc.com",
+                "hostname": "www.cnbc.com",
+                "favicon": "https://imgs.search.brave.com/KUrlWAd6ODBBSGj5d32vnSDOYDoLCxwRTHNzWoWbgjE/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYTJhNzM1OTQ2/YTZmNDZiOGM2ZDVk/OTUzOWY3ZThlZmYz/YzNkNDk5MDcyOGI2/MzEzMzNmYjM1ZGRk/YjdhNGVlYy93d3cu/Y25iYy5jb20v",
+                "path": "\u203a 2024  \u203a 06  \u203a 11  \u203a fed-meeting-and-inflation-report-both-hit-wednesday-and-the-impact-could-be-huge.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/l_-0hnCNi12YDweB8pqan5-gV2o55KGWPpAT2Vspk2s/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9pbWFn/ZS5jbmJjZm0uY29t/L2FwaS92MS9pbWFn/ZS8xMDczNDU4NzEt/MTcwMjQ3Njc2Mjk1/NC0xMDczNDU4NzEt/MTcwMjMxMDM1MTY5/Mi1nZXR0eWltYWdl/cy0xNzcxNDE4NTYz/LUFBXzA4MTEyMDIz/XzE0MTIwMDUuanBn/P3Y9MTcwMjQ3Njc3/NSZhbXA7dz0xOTIw/JmFtcDtoPTEwODA"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Understanding how ECB and FOMC meetings this week can impact stocks",
+            "url": "https://www.fxstreet.com/analysis/understanding-how-ecb-and-fomc-meetings-this-week-can-impact-stocks-202406111543",
+            "description": "Hey there, fellow traders! This week, it's time to tread carefully as we navigate through some significant events in the financial world.",
+            "age": "June 11, 2024",
+            "page_age": "2024-06-11T15:43:25",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "fxstreet.com",
+                "hostname": "www.fxstreet.com",
+                "favicon": "https://imgs.search.brave.com/VVlx1Zkf-CxdVif1qFjfdzNH5oK718c3aEYKDVDaS1w/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZjJlYTYzYjI4/NjI1MWZmZmY2ZTFm/ZTJhNjAzYWE3ODNi/NzJlY2E4MmY5OGZj/NjJjZGQwMzhmNmUz/YzJhMjk2ZS93d3cu/ZnhzdHJlZXQuY29t/Lw",
+                "path": "\u203a analysis  \u203a understanding-how-ecb-and-fomc-meetings-this-week-can-impact-stocks-202406111543"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/yKMi2uwEcQNK-Cjc-C2v5-Iq0yHkkVqrTdXVan6BTiQ/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9lZGl0/b3JpYWwuZnhzdHJl/ZXQuY29tL2ltYWdl/cy9NYWNyb2Vjb25v/bWljcy9DZW50cmFs/QmFua3MvRUNCL2Zs/YWctb2YtdGhlLWV1/cm9wZWFuLWNvbW11/bml0eS1ldXJvdG93/ZXItMjQ2MzcwMjVf/TGFyZ2UuanBn"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "Fed's June meeting: What the dot plot is telling Wall Street",
+            "url": "https://finance.yahoo.com/video/feds-june-meeting-dot-plot-135207088.html",
+            "description": "The Federal Reserve is convening for its two-day FOMC (Federal Open Market Committee) meeting on Tuesday. While officials are expected to hold interest rates where they are, investors will be watching the monetary policy outlook and how many rate cuts could be projected in the remainder of 2024.",
+            "age": "June 11, 2024",
+            "page_age": "2024-06-11T13:52:07",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "finance.yahoo.com",
+                "hostname": "finance.yahoo.com",
+                "favicon": "https://imgs.search.brave.com/hRAFhmYXxP9OpzJ55FclsbPhI1oD49fk4MzigrsdGPo/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+                "path": "\u203a video  \u203a feds-june-meeting-dot-plot-135207088.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/MnH-oT0LwHhv_8LhrDQPyYwj4g5A1nJ2bK8kTawK5Oo/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yLzdU/MU04TTBGWWF1U2Rq/Z21WMlhTRWctLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDJO/elUtL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjQtMDYvOTY2/YzFiMDAtMjdmNi0x/MWVmLWI3NzQtZDlm/ODNiZjgzOTZh"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "When is the Fed's next meeting?",
+            "url": "https://finance.yahoo.com/personal-finance/when-is-the-next-fed-meeting-150709150.html",
+            "description": "The Fed meets eight times per year to evaluate the health of the economy and make decisions regarding monetary policy. Here\u2019s a schedule of the Fed\u2019s meetings for 2024.",
+            "age": "June 10, 2024",
+            "page_age": "2024-06-10T15:24:59",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "finance.yahoo.com",
+                "hostname": "finance.yahoo.com",
+                "favicon": "https://imgs.search.brave.com/hRAFhmYXxP9OpzJ55FclsbPhI1oD49fk4MzigrsdGPo/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjRkNjc1NWY5/MzM5ZjlkMWQyNjM5/OWNiMTQ4ZjcwNTQx/ZjA3ZDE4NDQ2M2Iw/MWZjZjVhOTFlM2Ji/NTE1NWRjZS9maW5h/bmNlLnlhaG9vLmNv/bS8",
+                "path": "\u203a personal-finance  \u203a when-is-the-next-fed-meeting-150709150.html"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/SkyB_VeXN5-btYvY4cYWV-7fZgfLJIRtxMF1rJoy_B0/rs:fit:200:200:1/g:ce/aHR0cHM6Ly9zLnlp/bWcuY29tL255L2Fw/aS9yZXMvMS4yL1RJ/VmtNemsxZlJJQXJ6/TVJsdGNIaUEtLS9Z/WEJ3YVdROWFHbG5h/R3hoYm1SbGNqdDNQ/VEV5TURBN2FEMDRN/RGstL2h0dHBzOi8v/cy55aW1nLmNvbS9v/cy9jcmVhdHItdXBs/b2FkZWQtaW1hZ2Vz/LzIwMjMtMTEvMTBm/NjNlYzAtN2E4MC0x/MWVlLWJmZjItN2Iz/ZmU1ZTNkNjcw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "June Fed Meeting Preview: Are Officials Waiting Too Long To Cut Interest Rates? | Bankrate",
+            "url": "https://www.bankrate.com/banking/federal-reserve/fomc-what-to-expect/",
+            "description": "At their next gathering in June, the Federal Open Market Committee (FOMC) is expected to leave borrowing costs at a 23-year high of 5.25-5.5 percent.",
+            "age": "June 10, 2024",
+            "page_age": "2024-06-10T04:10:49",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "bankrate.com",
+                "hostname": "www.bankrate.com",
+                "favicon": "https://imgs.search.brave.com/N-K98vpG2eGK-baKN7OdGU9ZCYyw5MSdstvWH69bh2k/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMWUwYTdhNzE3/ZDU4NzA4NjVmZDdi/YzA5OGY0YTgzZjYx/N2RjYTllZjNhZjA0/YWYzMjJlMzRkZWI0/NTI4ZDZlOC93d3cu/YmFua3JhdGUuY29t/Lw",
+                "path": "\u203a banking  \u203a federal-reserve  \u203a fomc-what-to-expect"
+            },
+            "thumbnail": {
+                "src": "https://imgs.search.brave.com/MTuOnUwC0l_x-SY_xQdS0XTaYe6iY4RBn_wBM8T8_Yk/rs:fit:200:200:1/g:ce/aHR0cHM6Ly93d3cu/YmFua3JhdGUuY29t/L2JycC8yMDI0LzA0/LzA3MTQzMzM4L0Nl/bnRyYWwtSnVuZS1G/ZWQtbWVldGluZy1w/cmV2aWV3LmpwZw"
+            }
+        },
+        {
+            "type": "news_result",
+            "title": "With No Rate Cut Expected, Here\u2019s What To Watch At June\u2019s FOMC Meeting",
+            "url": "https://www.forbes.com/sites/simonmoore/2024/06/03/no-rate-cut-seen-at-junes-fomc-meeting-heres-what-to-watch-for/",
+            "description": "Expectations that the Fed cuts interest rates at its next meeting in June are very low. But the FOMC may affirm that cuts are likely later in 2024.",
+            "age": "June 3, 2024",
+            "page_age": "2024-06-03T08:45:00",
+            "meta_url": {
+                "scheme": "https",
+                "netloc": "forbes.com",
+                "hostname": "www.forbes.com",
+                "favicon": "https://imgs.search.brave.com/2YUF4i_97ZK_dBBUV_uuLn6S00dzPoQEiMSm4pZAsuo/rs:fit:32:32:1/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZWY0NWFiMTBk/YmY2MjkyN2M0MTI0/NmRkYTM3ZjQzMGJj/Y2Q2MTBkYjVmZjA2/OGRjODBhMTM1M2Yx/YmRlZTA1NS93d3cu/Zm9yYmVzLmNvbS8",
+                "path": "\u203a sites  \u203a simonmoore  \u203a 2024  \u203a 06  \u203a 03  \u203a no-rate-cut-seen-at-junes-fomc-meeting-heres-what-to-watch-for"
+            },
+            "thumbnail": {
+                "src": ""
+            }
+        }
+    ]
+}

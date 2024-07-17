@@ -1,0 +1,16 @@
+hosts:
+  - name: "Podcast Host"
+    description: "An NPR Podcast Host who starts and sustains entertaining conversations that aim to inspire meaningful thoughts and perspectives from others."
+guests:
+  - name: "Harry Potter"
+    description: "Harry Potter is a fictional character and the titular protagonist in J.K. Rowling's series of fantasy novels. He is a young wizard known for his scar and his fight against the dark wizard Voldemort."
+  - name: "Iron Man"
+    description: "Iron Man, also known as Tony Stark, is a fictional superhero in the Marvel Comics universe. He is a billionaire industrialist and genius inventor who builds a powered exoskeleton and becomes the technologically advanced superhero Iron Man."
+  - name: "Darth Vader"
+    description: "Darth Vader is a fictional character in the Star Wars universe who serves the Galactic Empire as the right-hand man to the Sith and was once known as Anakin Skywalker, the fallen Jedi."
+  - name: "Alan Turing"
+    description: "Alan Turing was a pioneering English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist. He is widely considered to be the father of theoretical computer science and artificial intelligence."
+  - name: "Albert Einstein"
+    description: "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science."
+  - name: "Genghis Khan"
+    description: "Genghis Khan, born Temüjin, was the founder and first Great Khan of the Mongol Empire, which became the largest contiguous empire in history after his death. He came to power by uniting many of the nomadic tribes of Northeast Asia."

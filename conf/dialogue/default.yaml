@@ -1,16 +1,20 @@
 defaults:
   - _self_
-  - characters
-  - system_prompts
+  - characters: default
+  - system_prompts: default
 
-# Add your LLM config here
-llm_config: 
+llm_config:
   cache_seed: 42
   temperature: 0
   timeout: 120
-  
-podcast:
-  host: ${characters.host}  # Reference to host in characters.yaml
-  guests: ${characters.guests}  # Reference to guests in characters.yaml
+  config_list_path: "conf/OAI_CONFIG_LIST.txt"
+  filter_dict:
+    model: ["gemini-1.5-pro"]
+
+podcast_config:
+  topic: "Democracy"
+  character_cfg:
+    hosts: ${characters.hosts}  # Reference to host in characters.yaml
+    guests: ${characters.guests}  # Reference to guests in characters.yaml
 
 system_prompts: ${system_prompts}  # Reference to system_prompts.yaml

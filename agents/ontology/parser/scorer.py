@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 from agents.utils.registry import parser_registry
 
-@parser_registry.register("SCORER")
+@parser_registry.register("scorer.task")
 class TASK_SCORER(BaseModel):
   is_task_completed: Optional[bool] = Field(..., description="is the task of interest completed")
   progress_score: Optional[float] = Field(..., description="a score between 0 and 1 on the best estimated progress of the task completion, if any")
@@ -15,7 +15,7 @@ class TASK_SCORER(BaseModel):
 
   
 # settings to Scoring of the chat model
-@parser_registry.register("EVAL_SCORER")
+@parser_registry.register("scorer.web_browse")
 class WEB_BROWSE_SCORER(TASK_SCORER):
   is_image_available: Optional[bool] = Field(..., description="is there an image or screenshot in the input")
   

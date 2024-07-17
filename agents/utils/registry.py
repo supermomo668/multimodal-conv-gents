@@ -1,3 +1,4 @@
+import warnings
 
 class Registry:
     def __init__(self):
@@ -9,7 +10,7 @@ class Registry:
             if name is None:
                 name = cls.__name__
             if name in self._registry:
-                raise KeyError(f"Class name '{name}' already registered.")
+                warnings.warn(f"Class name '{name}' already registered. Overwriting existing entry.", UserWarning)
             self._registry[name] = cls
             return cls
         return inner_wrapper
@@ -31,5 +32,7 @@ agent_registry = Registry()
 workflow_registry = Registry() 
 
 # dialogues
+
+initiation_registry = Registry()
 
 transition_registry = Registry()

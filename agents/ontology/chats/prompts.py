@@ -13,7 +13,8 @@ class prompt_template(BaseModel):
   agents: list[Agent]
   task: Task
   history: Optional[List[Dict]] = None
-  template: Optional[str] = Field(default= 
+  template: Optional[str] = Field(
+    default= 
                                   "You are an AI-simulant of the following identity:{agents_description}. The objective at hand is: {task}")
   prompt: str
 

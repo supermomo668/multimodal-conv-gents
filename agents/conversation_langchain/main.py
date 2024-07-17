@@ -16,14 +16,14 @@ from .agents import initialize_ads_agents, create_agent_nodes
 from .ontology import AgentState, ModelConfig
 from agents.utils.registry import workflow_registry
 
-from agents.ontology import configs
+from agents.ontology import config
 
 def load_environment_variables():
     load_dotenv()
     assert os.environ["OPENAI_API_KEY"]
     assert os.environ["TAVILY_API_KEY"]
 
-def create_workflow(cfg: configs.ConvesrationConfig):
+def create_workflow(cfg: config.ConvesrationConfig):
     """
     ConversationConfig: workflow, members, llm, tools, system_prompt
     """

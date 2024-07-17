@@ -1,5 +1,8 @@
 # files
 agent_data/
+tmp/
+web/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

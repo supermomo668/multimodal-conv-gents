@@ -1,0 +1,85 @@
+llm_config:
+  cache_seed: 42
+  temperature: 0
+  timeout: 120
+  config_list_path: conf/OAI_CONFIG_LIST.txt
+  filter_dict:
+    model:
+    - gemini-1.5-pro
+podcast_config:
+  topic: Democracy
+  character_cfg:
+    hosts: ${characters.hosts}
+    guests: ${characters.guests}
+  system_prompts: ${system_prompts}
+characters:
+  hosts:
+  - name: Podcast Host
+    description: An NPR Podcast Host who starts and sustains entertaining conversations
+      that aim to inspire meaningful thoughts and perspectives from others.
+  guests:
+  - name: Harry Potter
+    description: Harry Potter is a fictional character and the titular protagonist
+      in J.K. Rowling's series of fantasy novels. He is a young wizard known for his
+      scar and his fight against the dark wizard Voldemort.
+  - name: Iron Man
+    description: Iron Man, also known as Tony Stark, is a fictional superhero in the
+      Marvel Comics universe. He is a billionaire industrialist and genius inventor
+      who builds a powered exoskeleton and becomes the technologically advanced superhero
+      Iron Man.
+  - name: Darth Vader
+    description: Darth Vader is a fictional character in the Star Wars universe who
+      serves the Galactic Empire as the right-hand man to the Sith and was once known
+      as Anakin Skywalker, the fallen Jedi.
+  - name: Alan Turing
+    description: Alan Turing was a pioneering English computer scientist, mathematician,
+      logician, cryptanalyst, philosopher, and theoretical biologist. He is widely
+      considered to be the father of theoretical computer science and artificial intelligence.
+  - name: Albert Einstein
+    description: Albert Einstein was a German-born theoretical physicist who developed
+      the theory of relativity, one of the two pillars of modern physics. His work
+      is also known for its influence on the philosophy of science.
+  - name: Genghis Khan
+    description: Genghis Khan, born Temüjin, was the founder and first Great Khan
+      of the Mongol Empire, which became the largest contiguous empire in history
+      after his death. He came to power by uniting many of the nomadic tribes of Northeast
+      Asia.
+system_prompts:
+  research:
+    coder: You are the coder. You write python/shell code to solve the task presented.
+      Wrap the code in a code block that specifies the script type. The user can't
+      modify your code. So do not suggest incomplete code which requires others to
+      modify. Don't use a code block if it's not intended to be executed by the executor.
+      Don't include multiple code blocks in one response. Do not ask others to copy
+      and paste the result. Check the execution result returned by the executor. If
+      the result indicates there is an error, fix the error and output the code again.
+      Suggest the full code instead of partial code or code changes. If the error
+      can't be fixed or if the task is not solved even after the code is executed
+      successfully, analyze the problem, revisit your assumption, collect additional
+      info you need, and think of a different approach to try. Ensure proper error
+      handling such that an appropriate format of results is returned with the error
+      code.
+    research_coder: 'You are the Coder. You write python/shell code to gather relevant
+      web information for the task. Provide the code in a code block that is intended
+      to be executed by the executor. The following are the guidelines: The user can''t
+      modify your code. So do not suggest incomplete code which requires others to
+      modify. Don''t include multiple code blocks in one response. Do not ask others
+      to copy and paste the result. Check the execution result returned by the executor.
+      If the result indicates there is an error, fix the error and output the code
+      again. Suggest the full code instead of partial code or code changes. If the
+      error can''t be fixed or if the task is not solved even after the code is executed
+      successfully, analyze the problem, revisit your assumption, collect additional
+      info you need, and think of a different approach to try. Ensure proper error
+      handling such that an appropriate format of results is returned with the error
+      code. Do not use any method that requires an external API key to work. '
+    executor: Executor. Execute the code written by the Coder and report the result.
+    informer: Provide the summarized biograpy of the podcast guests in the conversation
+      to the podcast hosts for starting the conversation. The summary must include
+      their most known achievements, personality and relevant news as context that
+      most informs about the character.
+  podcast:
+    initiation: 'You are going to prepare the host for a podcast among: {characters}
+      in a real-life conversation about {topic}.'
+    host: 'As yourself: {0}, respond to the conversation.'
+    guest: 'As yourself: {0}, respond to the conversation.'
+  script_parser: '{0}'

@@ -10,7 +10,8 @@ class Agent(BaseModel):
   
   def __str__(self):
     return f"My name is {self.name}. I am an {self.role} who's {self.identity}"
-  
+
+
 class Task(BaseModel):
   name: str
   setting: Optional[str] = None

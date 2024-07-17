@@ -1,0 +1,25 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: dialogue module",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "agents.dialogue.main",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",  // Working directory
+      "env": {
+        "PYTHONIOENCODING": "utf-8",
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONUTF8": "1",
+        "DEBUGPY_HOST": "127.0.0.1",
+        "PYTHONPATH": "${workspaceFolder}"  // Optional: Set any environment variables here
+      },
+      "pythonPath": "/home/mymm_psu_gmail_com/miniconda3/envs/dev/bin/python",  // Adjust this path to your Python interpreter
+      "justMyCode": true
+    } 
+  ]
+}

@@ -31,13 +31,13 @@ jobs:
       run: |
         poetry install
       
-      - name: Check for changes in agent module
-      id: changes-agent
+    - name: Check for changes in agent module
+      id: changes-modules
       run: |
-        if git diff --name-only HEAD^ HEAD | grep '^agent/'; then echo "true"; else echo "false"; fi
+        if git diff --name-only HEAD^ HEAD | grep '^thought_agents/'; then echo "true"; else echo "false"; fi
 
     - name: Increment version if changes detected
-      if: steps.changes-agent.outputs.changes == 'true'
+      if: steps.changes-modules.outputs.changes == 'true'
       run: |
         poetry version patch
         

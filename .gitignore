@@ -129,7 +129,6 @@ celerybeat.pid
 
 # Environments
 **/*OAI_CONFIG_LIST
-**/*.env
 .env
 .venv
 env/

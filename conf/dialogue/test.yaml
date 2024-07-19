@@ -1,6 +1,6 @@
 defaults:
   - _self_
-  - characters: default
+  - characters: test
   - system_prompts: default
 
 llm_config:
@@ -13,7 +13,6 @@ llm_config:
 
 podcast_config:
   topic: "Democracy"
-  n_rounds: 10
   character_cfg:
     hosts: ${characters.hosts}  # Reference to host in characters.yaml
     guests: ${characters.guests}  # Reference to guests in characters.yaml

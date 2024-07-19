@@ -18,7 +18,7 @@
         "DEBUGPY_HOST": "127.0.0.1",
         "PYTHONPATH": "${workspaceFolder}"  // Optional: Set any environment variables here
       },
-      "pythonPath": "/home/mymm_psu_gmail_com/miniconda3/envs/dev/bin/python",  // Adjust this path to your Python interpreter
+      "pythonPath": "/home/mymm_psu_gmail_com/miniconda3/envs/ficast/bin/python",  // Adjust this path to your Python interpreter
       "justMyCode": true
     } 
   ]

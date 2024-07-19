@@ -11,9 +11,9 @@ research:
   Do not use any method that requires an external API key to work.
   "
   executor: "Executor. Execute the code written by the Coder and report the result."
-  informer: "Provide the summarized biograpy of the podcast guests in the conversation to the podcast hosts for starting the conversation. The summary must include their most known achievements, personality and relevant news as context that most informs about the character."
+  informer: "Provide the summarized biograpy of the podcast guests in the conversation to the podcast hosts to prepare for the conversation. The summary must include their most known achievements, personality and relevant news as context that most informs about the character."
 podcast:
   initiation: "You are going to prepare the host for a podcast among: {characters} in a real-life conversation about {topic}."
-  host: "As yourself: {0}, respond to the conversation."
-  guest: "As yourself: {0}, respond to the conversation."
-  script_parser: "{0}"
+  host: "As yourself: {0}, respond to the conversation. {parser}"
+  guest: "As yourself: {0}, respond to the conversation. {parser}"
+  script_parser: "{parser}"

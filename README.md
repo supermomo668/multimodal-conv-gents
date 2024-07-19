@@ -1,4 +1,5 @@
 # Multimodal Vision Agent
+![Publish to TestPyPI](https://github.com/supermomo668/multimodal-conv-agents/actions/workflows/publishp-testpypi.yml/badge.svg)
 
 ## Dialogue Package  [On-going]
 In `dialogue/`, run pipeline by `dialogue/main.py` to execute conversation generation.

@@ -1,0 +1,59 @@
+name: Publish to TestPyPI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install Poetry
+      run: |
+        curl -sSL https://install.python-poetry.org | python3 -
+        echo "::add-path::$HOME/.local/bin"
+
+    - name: Configure Poetry
+      run: |
+        poetry config virtualenvs.create false
+
+    - name: Install dependencies
+      run: |
+        poetry install
+      
+      - name: Check for changes in agent module
+      id: changes-agent
+      run: |
+        if git diff --name-only HEAD^ HEAD | grep '^agent/'; then echo "true"; else echo "false"; fi
+
+    - name: Increment version if changes detected
+      if: steps.changes-agent.outputs.changes == 'true'
+      run: |
+        poetry version patch
+        
+    - name: Configure Poetry for Test PyPI
+      run: |
+        poetry config repositories.test-pypi https://test.pypi.org/legacy/
+        poetry config pypi-token.test-pypi ${{ secrets.TEST_PYPI_TOKEN }}
+    - name: Update version and lock file
+      run: |
+        poetry version minor
+        poetry lock
+
+    - name: Build the package
+      run: |
+        poetry build
+
+    - name: Publish to TestPyPI
+      run: |
+        poetry publish -r test-pypi

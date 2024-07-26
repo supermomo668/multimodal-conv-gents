@@ -1,3 +1,6 @@
+"""
+[deprecated 7/25/2024]
+"""
 from pydantic import BaseModel, Field
 from typing import List
 

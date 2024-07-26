@@ -13,8 +13,9 @@ class Dialogue(BaseModel):
     monologue: Monologue
 
 class Podcast(BaseModel):
-    abstract: AnyStr = Field(..., description="abstract of the podcast")
-    podcast: List[Dialogue] = Field(..., description="the dialogues script in the podcast")
+    title: str = Field(..., description="Title of the podcast")
+    abstract: str = Field(..., description="Abstract of the podcast")
+    dialogues: List[Dialogue] = Field(..., description="Script of dialogues that took palce in the podcast")
     
 podcast_parser = PydanticOutputParser(pydantic_object=Podcast)
 monologue_parser = PydanticOutputParser(pydantic_object=Monologue)

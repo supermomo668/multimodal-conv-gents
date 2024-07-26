@@ -6,14 +6,28 @@ import autogen
 from autogen.code_utils import DEFAULT_MODEL
 
 from thought_agents.ontology.chats.client import AutogenLLMConfig
-from thought_agents.ontology.config.dialogue import ConversationConfig, PodcastCharacters, PodcastConfig
+from thought_agents.ontology.config.dialogue import ConversationConfig, Person
 from thought_agents.ontology.parser.dialogue import podcast_parser, monologue_parser
 
 from thought_agents.utils.registry import agent_registry
 
 from .utils import termination_msg
 
-
+def create_conversable_agent(
+    cfg: ConversationConfig,
+    person: Person
+    ) -> autogen.ConversableAgent:
+    return autogen.ConversableAgent(
+        name=person.name,  
+        is_termination_msg=termination_msg,
+        human_input_mode="NEVER",
+        code_execution_config=False,
+        llm_config=cfg.llm_config.model_dump(),
+        description=person.description,
+        system_message=cfg.system_prompts['podcast']['guest'].format(
+            person.name, parser=monologue_parser.get_format_instructions()),
+    )
+    
 @agent_registry.register(name="podcast.characters")
 @beartype
 def create_podcast_agents(
@@ -58,7 +72,8 @@ def create_research_agents(
         autogen.AssistantAgent(
             name=agent_name,
             llm_config=llm_config.model_dump(),
-            system_message=system_prompts['research'][agent_name]
+            system_message=system_prompts['research'][agent_name],
+            code_execution_config={"last_n_messages": 3, "work_dir": "_outputs/code", "use_docker": False} if "coder" in agent_name else {}
         ) for agent_name in agent_names
     ]
     return agents
@@ -73,6 +88,7 @@ def create_parser_agents(
         name="script_parser",
         llm_config=llm_config.model_dump(),
         human_input_mode="NEVER",
+        is_termination_msg=lambda msg: all([s in msg["content"].lower() for s in ["abstract", "script"]]),
         system_message=system_prompts['podcast']['script_parser'].format(
             parser=podcast_parser.get_format_instructions()
         ),

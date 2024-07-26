@@ -15,24 +15,26 @@ class AutogenLLMConfig(BaseModel):
     cache_seed: int = 42
     temperature: float = 0
     timeout: int = 120
-    config_list: Optional[List] = []
-    filter_dict: Dict = {
-      "model": ["gemini-pro"]
-    }
-    # ["gpt-4-vision-preview"] ["gpt-4", "gpt-4-0314", "gpt4", "gpt-4-32k", "gpt-4-32k-0314", "gpt-4-32k-v0314"]
+    config_list: Optional[List] = Field(default_factory=list)
+    filter_dict: Dict = Field(default_factory=lambda: {"model": ["gemini-pro"]})
     config_list_path: str = "conf/OAI_CONFIG_LIST.txt"
     
-    @field_validator("config_list_path", mode="before")
-    @classmethod
-    def initialize_config_list(cls, v:list, values: Dict[str, Any]) -> List:
+    class Config:
+        arbitrary_types_allowed = True
+
+    def __init__(self, **data: Any):
+      super().__init__(**data)
+      self.config_list = self.initialize_config_list(
+          self.config_list_path, self.filter_dict
+      )
+
+    def initialize_config_list(self, config_list_path: str, filter_dict: Dict) -> List:
       try:
         config_list = autogen.config_list_from_json(
-          to_absolute_path(v),
-          filter_dict=values.data.get('filter_dict'),
+          to_absolute_path(config_list_path),
+          filter_dict=filter_dict,
         )
-        values.data["config_list"] = config_list
-        return v
+        return config_list
       except Exception as e:
         raise ValueError(f"Failed to initialize config_list: {e}")
-      
 

@@ -23,7 +23,6 @@ def get_state_transition(
         return state_transition_func(
             last_speaker, groupchat, podcast_cfg.character_cfg, max_round
         )
-    
     return state_transition_wrapper
 
 # @transition_registry.register("research")   # cannot be used standalone
@@ -74,7 +73,9 @@ def podcast_state_transition(
             host_chance_factor=host_chance_factor, 
         )
         return next_speaker
-    raise ValueError("Invalid last_speaker. This transition only supports custom podcast speakers")
+    elif last_speaker.name == "script_parser":
+        return groupchat.agent_by_name("script_parser")
+    raise ValueError(f"Invalid last_speaker:{last_speaker.name}. This transition only supports custom podcast speakers")
 
 @transition_registry.register("podcast.default")
 def full_podcast_state_transition(

@@ -20,6 +20,7 @@ def create_research_agents(
     manager, 
     message=system_prompts['podcast']["initiation"].format(
       characters=",".join(podcast_cfg.character_cfg.guest_names),
-      topic=podcast_cfg.topic
+      topic=podcast_cfg.topic,
+      length=podcast_cfg.length
       )
   )

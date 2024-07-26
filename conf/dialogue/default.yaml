@@ -17,5 +17,6 @@ podcast_config:
   character_cfg:
     hosts: ${characters.hosts}  # Reference to host in characters.yaml
     guests: ${characters.guests}  # Reference to guests in characters.yaml
-
+  length: 10
+  
 system_prompts: ${system_prompts}  # Reference to system_prompts.yaml

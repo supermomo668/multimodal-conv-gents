@@ -7,8 +7,7 @@ from thought_agents.ontology.chats.client import AutogenLLMConfig
 
 class Person(BaseModel):
     name: AnyStr = Field(..., description="name of the person")
-    description: AnyStr = Field(..., description="1-2 line description of the person if known, otherwise just a generic character.")
-
+    description: AnyStr = Field(..., description="A description of the person if known, otherwise just a generic character.")
 
 class PodcastCharacters(BaseModel):
     hosts: List[Person] = Field(..., description="host of the podcast")
@@ -22,9 +21,11 @@ class PodcastCharacters(BaseModel):
         return [host.name for host in self.hosts]
 
 class PodcastConfig(BaseModel):
-    topic: str = Field(..., description="topic of the podcast")
-    n_rounds: int = Field(..., description="number of rounds in the podcast")
-    character_cfg: PodcastCharacters
+    topic: str = Field(default="Natural Conversation", description="topic of the podcast")
+    n_rounds: int = Field(default=5, description="number of talking rounds in the podcast")
+    length: int = Field(default=10, description="length of the podcast in minutes")
+    character_cfg: PodcastCharacters = None
+    
 
 class ConversationConfig(BaseModel):
     llm_config: AutogenLLMConfig

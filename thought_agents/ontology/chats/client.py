@@ -10,13 +10,14 @@ class model_client_config(BaseModel):
   model: str = "gpt-4-vision-preview"
   temperature: float = 0
   max_tokens: Optional[int] = 1024
+  timeout: int = 120
+  cache_seed: int = 42
+
   
 class AutogenLLMConfig(BaseModel):
-    cache_seed: int = 42
-    temperature: float = 0
-    timeout: int = 120
     config_list: Optional[List] = Field(default_factory=list)
-    filter_dict: Dict = Field(default_factory=lambda: {"model": ["gemini-pro"]})
+    model: str = "gemini-1.5-pro"
+    filter_dict: Dict
     config_list_path: str = "conf/OAI_CONFIG_LIST.txt"
     
     class Config:
@@ -24,6 +25,7 @@ class AutogenLLMConfig(BaseModel):
 
     def __init__(self, **data: Any):
       super().__init__(**data)
+      self.filter_dict = {"model": [self.model]}
       self.config_list = self.initialize_config_list(
           self.config_list_path, self.filter_dict
       )

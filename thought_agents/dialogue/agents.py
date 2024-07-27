@@ -1,15 +1,15 @@
 from typing import List, Tuple, Dict, AnyStr
 from beartype import beartype
-from omegaconf import DictConfig
 
 import autogen
-from autogen.code_utils import DEFAULT_MODEL
 
+from thought_agents.dialogue.tools import generate_llm_config
 from thought_agents.ontology.chats.client import AutogenLLMConfig
 from thought_agents.ontology.config.dialogue import ConversationConfig, Person
 from thought_agents.ontology.parser.dialogue import podcast_parser, monologue_parser
 
 from thought_agents.utils.registry import agent_registry
+from thought_agents.web.summarizer import WebSummarizer
 
 from .utils import termination_msg
 
@@ -68,14 +68,23 @@ def create_research_agents(
     ) -> List[autogen.AssistantAgent]:
     agents = []
     agent_names = ["research_coder", "executor", "informer"]
-    agents = [
-        autogen.AssistantAgent(
-            name=agent_name,
-            llm_config=llm_config.model_dump(),
-            system_message=system_prompts['research'][agent_name],
-            code_execution_config={"last_n_messages": 3, "work_dir": "_outputs/code", "use_docker": False} if "coder" in agent_name else {}
-        ) for agent_name in agent_names
-    ]
+    for n in agent_names:
+        match n:
+            case "research_coder":
+                kwargs = {
+                    'code_execution_config': {"last_n_messages": 3, "work_dir": "_outputs/code", "use_docker": False},
+                    'llm_config': llm_config.model_dump()
+                }
+                kwargs['llm_config'].update({'functions': [generate_llm_config(WebSummarizer(llm_config.model))]})
+            case _:
+                kwargs = {'llm_config': llm_config.model_dump()}
+        agents.append(
+            autogen.AssistantAgent(
+                name=n,
+                system_message=system_prompts['research'][n],
+                **kwargs
+            )
+        )
     return agents
 
 @agent_registry.register(name="podcast.parser")

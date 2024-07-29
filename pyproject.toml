@@ -1,11 +1,10 @@
 [tool.poetry]
 name = "thought-agents"
-version = "0.2.3"
+version = "0.2.6"
 description = "package for thoughtful agents partipating in stimulating, interactive conversations in a intra- & intro- spective manner"
 authors = ["supermomo668 <mymomo119966.mm@gmail.com>"]
 license = "Apache2.0"
 readme = "README.md"
-packages = [{include = "thought_agents"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
@@ -48,3 +47,4 @@ build-backend = "poetry.core.masonry.api"
 name = "test-pypi"
 url = "https://test.pypi.org/simple/"
 priority = "explicit"
+

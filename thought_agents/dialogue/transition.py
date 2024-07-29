@@ -1,4 +1,6 @@
+from typing import Dict
 from beartype import beartype
+import warnings
 
 import autogen
 from thought_agents.utils.registry import transition_registry
@@ -12,7 +14,7 @@ logger = setup_logger('main_logger', 'app.log')
 
 @beartype
 def get_state_transition(
-    podcast_cfg: PodcastConfig, transition="podcast.default", MAX_ROUND=10):
+    podcast_cfg: PodcastConfig, dest_informant_agent, transition="podcast.default", MAX_ROUND=10):
     """
     Get the state transition function from the registry based on the transition type.
     """
@@ -20,15 +22,29 @@ def get_state_transition(
     if not state_transition_func:
         raise ValueError(f"No state transition function registered for transition type: {transition}")
     def state_transition_wrapper(last_speaker, groupchat, max_round=MAX_ROUND):
+        kwargs = {}
+        if 'research' in transition:
+            kwargs.update({'destination_agent': dest_informant_agent})
         return state_transition_func(
-            last_speaker, groupchat, podcast_cfg.character_cfg, max_round
+            last_speaker, groupchat, podcast_cfg.character_cfg, max_round, **kwargs
         )
     return state_transition_wrapper
 
 # @transition_registry.register("research")   # cannot be used standalone
 def research_state_transition(
-    last_speaker, groupchat, destination_speaker: str | autogen.Agent ="Podcast Host", max_round=10, **kwargs
+    last_speaker, groupchat, destination_agent: str | autogen.Agent , max_round=10,
     ):
+    """
+    Parameters:
+        last_speaker (Agent): The last speaker in the group chat.
+        groupchat (GroupChat): The group chat object.
+        max_round (int, optional): The maximum number of rounds. Defaults to 10.
+        destination_agent (Agent, optional): The agent who is the informant (target of informer)
+    Returns:
+        Agent: The next speaker in the group chat.
+    Raises:
+        ValueError: If the last_speaker is unknown.
+    """
     messages = groupchat.messages
     logger.info(f"Transition: research")
     logger.info(f"Number of agents: {len(groupchat.agents)}. Agents: {groupchat.agent_names}")
@@ -45,16 +61,19 @@ def research_state_transition(
                 return groupchat.agent_by_name("research_coder")  # research_coder
         case "executor":
             if "exitcode: 1" in messages[-1]["content"]:
+                warnings.warn(f"Agent failed to complete the task, passing back to coder")
                 return groupchat.agent_by_name("research_coder")  # research_coder
             else:
                 return groupchat.agent_by_name("informer")  # informer
         case "informer":
             # Always pass to Host last
-            return "Podcast Host"  # podcast_host
-
+            return destination_agent  # podcast_host
+        case _:
+            raise ValueError(f"Unknown last_speaker: {last_speaker.name} given for research state transition")
+        
 # @transition_registry.register("podcast")   # cannot be used standalone
 def podcast_state_transition(
-    last_speaker, groupchat, character_cfg, max_round=10, host_chance_factor=0.2, **kwargs
+    last_speaker, groupchat, character_cfg, max_round=10, host_chance_factor=0.2, **kwargs: Dict[str | autogen.Agent]
     ):
     """
     host must come First 
@@ -86,7 +105,7 @@ def full_podcast_state_transition(
     match last_speaker.name.lower():
         case "init" | "coder" | "research_coder"| "executor" | "informer":
             speaker= research_state_transition(
-                last_speaker, groupchat)
+                last_speaker, groupchat, destination_agent=character_cfg.hosts[0])
         case _: # podcast characters and all others
             speaker = podcast_state_transition(
                 last_speaker, groupchat, character_cfg, max_round)

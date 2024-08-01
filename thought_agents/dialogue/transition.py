@@ -14,7 +14,7 @@ logger = setup_logger('main_logger', 'app.log')
 
 @beartype
 def get_state_transition(
-    podcast_cfg: PodcastConfig, dest_informant_agent, transition="podcast.default", MAX_ROUND=10):
+    podcast_cfg: PodcastConfig, transition="podcast.default", MAX_ROUND=10):
     """
     Get the state transition function from the registry based on the transition type.
     """
@@ -23,8 +23,6 @@ def get_state_transition(
         raise ValueError(f"No state transition function registered for transition type: {transition}")
     def state_transition_wrapper(last_speaker, groupchat, max_round=MAX_ROUND):
         kwargs = {}
-        if 'research' in transition:
-            kwargs.update({'destination_agent': dest_informant_agent})
         return state_transition_func(
             last_speaker, groupchat, podcast_cfg.character_cfg, max_round, **kwargs
         )
@@ -73,7 +71,7 @@ def research_state_transition(
         
 # @transition_registry.register("podcast")   # cannot be used standalone
 def podcast_state_transition(
-    last_speaker, groupchat, character_cfg, max_round=10, host_chance_factor=0.2, **kwargs: Dict[str | autogen.Agent]
+    last_speaker, groupchat, character_cfg, max_round=10, host_chance_factor=0.2
     ):
     """
     host must come First 
@@ -85,6 +83,7 @@ def podcast_state_transition(
     if len(messages) >= max_round-1:
         return groupchat.agents_by_name("script_parser")  
     if last_speaker.name in character_cfg.guest_names + character_cfg.host_names:
+        # Choose between next speaker based on non-host weightings
         next_speaker = weighted_choice(
             [a for a, name in zip(groupchat.agents, groupchat.agent_names) if name in character_cfg.host_names+character_cfg.guest_names],
             last_speaker,
@@ -98,14 +97,14 @@ def podcast_state_transition(
 
 @transition_registry.register("podcast.default")
 def full_podcast_state_transition(
-    last_speaker, groupchat, character_cfg, max_round=10):
+    last_speaker, groupchat, character_cfg, max_round=10, **kwargs):
     messages = groupchat.messages
     if len(messages) >= max_round-1:
         return groupchat.agents[-1]  # Assuming the script parser is the last agen
     match last_speaker.name.lower():
         case "init" | "coder" | "research_coder"| "executor" | "informer":
             speaker= research_state_transition(
-                last_speaker, groupchat, destination_agent=character_cfg.hosts[0])
+                last_speaker, groupchat, destination_agent=character_cfg.hosts[0].name)
         case _: # podcast characters and all others
             speaker = podcast_state_transition(
                 last_speaker, groupchat, character_cfg, max_round)

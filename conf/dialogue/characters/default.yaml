@@ -11,6 +11,6 @@ guests:
   - name: "Alan Turing"
     description: "Alan Turing was a pioneering English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist. He is widely considered to be the father of theoretical computer science and artificial intelligence."
   - name: "Albert Einstein"
-    description: "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science."
+    description: "Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philo sophy of science."
   - name: "Genghis Khan"
     description: "Genghis Khan, born Temüjin, was the founder and first Great Khan of the Mongol Empire, which became the largest contiguous empire in history after his death. He came to power by uniting many of the nomadic tribes of Northeast Asia."

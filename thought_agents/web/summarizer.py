@@ -13,13 +13,10 @@ from langchain_openai import ChatOpenAI
 from langchain.chains.combine_documents.stuff import StuffDocumentsChain
 from langchain.chains import MapReduceDocumentsChain, ReduceDocumentsChain
 from langchain_text_splitters import CharacterTextSplitter
-
 from langchain.chains.llm import LLMChain
-from langchain_core.prompts import PromptTemplate
+from langchain import hub # !pip install langchainhub -qqq
 
-# !pip install langchainhub -qqq
-from langchain import hub
-from langchain_core.language_models.chat_models import BaseChatModel
+from .prompts import map_prompt_template, reduce_prompt_template, ChatPromptTemplate
 
 async def load_urls_playwright(urls: List[AnyStr]=[]):
   loader = PlaywrightURLLoader(
@@ -52,19 +49,23 @@ class WebSummarizer(BaseTool):
   args_schema: Type[BaseModel] = WebSearchInput
   docs: List[Document] = None
   # Additional prompts attributes
-  map_prompt = hub.pull("rlm/map-prompt")
-  reduce_prompt = hub.pull("rlm/reduce-prompt")
-  reduce_prompt.messages[-1].prompt.template = """
-  The following is set of summaries:
-  {doc_summaries}
-  Take these and distill it into a comprehensive and detailed summary.
-  Helpful Answer:
-  """
+  map_prompt: ChatPromptTemplate = None
+  reduce_prompt: ChatPromptTemplate = None
   map_reduce_chain: MapReduceDocumentsChain = None
   text_splitter: TypeVar = None
   
   def __init__(self, model, summaries_max_token=int(4e3), **kwargs):
     super().__init__(**kwargs)
+    if not self.map_prompt: 
+      try:
+        self.map_prompt =hub.pull("rlm/map-prompt")
+      except:
+        self.map_prompt = map_prompt_template
+    if not self.reduce_prompt:
+      try:
+        self.reduce_prompt = hub.pull("rlm/reduce-prompt")
+      except:
+        self.reduce_prompt = reduce_prompt_template
     llm = client_factory(model)
     map_chain = LLMChain(llm=llm, prompt=self.map_prompt)
     reduce_chain = LLMChain(llm=llm, prompt=self.reduce_prompt)

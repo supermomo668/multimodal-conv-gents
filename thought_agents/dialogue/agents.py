@@ -1,5 +1,5 @@
-from typing import List, Tuple, Dict, AnyStr
 from beartype import beartype
+from typing import List, Tuple
 
 import autogen
 
@@ -64,7 +64,7 @@ def create_podcast_agents(
 @beartype
 def create_research_agents(
     llm_config: AutogenLLMConfig,
-    system_prompts: Dict[str, Dict | AnyStr]
+    system_prompts: dict[str, dict]
     ) -> List[autogen.AssistantAgent]:
     agents = []
     agent_names = ["research_coder", "executor", "informer"]
@@ -91,8 +91,8 @@ def create_research_agents(
 @beartype
 def create_parser_agents(
     llm_config: AutogenLLMConfig,
-    system_prompts: Dict[str, Dict | AnyStr]
-    ) -> List[autogen.AssistantAgent]:
+    system_prompts: dict[str, dict]
+) -> list[autogen.AssistantAgent]:
     script_parser = autogen.AssistantAgent(
         name="script_parser",
         llm_config=llm_config.model_dump(),

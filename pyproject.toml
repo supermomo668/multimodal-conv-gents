@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "thought-agents"
-version = "0.3.2"
+version = "0.3.7"
 description = "package for thoughtful agents partipating in stimulating, interactive conversations in a intra- & intro- spective manner"
 authors = ["supermomo668 <mymomo119966.mm@gmail.com>"]
 license = "Apache2.0"

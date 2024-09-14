@@ -2,7 +2,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from dataclasses import dataclass
 
 from typing import Union, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 ROLE_PROMPT = "Your are a genuine, informative and valuable human being. Your name is {name} and you are {role}."
 TASK_PROMPT = "The task is web navigation."
@@ -15,9 +15,7 @@ QUERY_PROMPTS = {
     "multion_trajectory-opentable": "The user is navigating on the OpenTable website to complete a restaurant reservation. The context of the task, the user's web navigation query, the screenshot and html DOM will be given in the following. Provide the best possible evaluation given information, if available, by comparing the user query with the current website context. Leave blank on information not available.\nContext of the task:{goal}\nThe user's query is: {query}. The website has the following text: {dom}.",
 }
 
-GPTV_EVAL_QUERY_PROMPTS = {
-    k: EVALUATOR_SYSTEM_PROMPT+ TASK_SYSTEM_PROMPT + v for k,v in GPTV_EVAL_QUERY_PROMPTS.items()
-}
+GPTV_EVAL_QUERY_PROMPTS = {}
 
 # update default as needed
 GPTV_EVAL_QUERY_PROMPTS.update({
@@ -30,6 +28,11 @@ class DEFAULT_PROMPTER(BaseModel):
     query: Optional[str] = None
     goal: Optional[str] = None
     dom: Optional[str] = None
+    model_config = ConfigDict(
+        protected_namespaces=(),
+        populate_by_name=True,
+        arbitrary_types_allowed=True
+    )
     def __init__(self, **data):
       super().__init__(**data)
 
@@ -44,6 +47,4 @@ class DEFAULT_PROMPTER(BaseModel):
         """
         # Use **self.dict() to pass all instance attributes as keyword arguments
         return template.format(**self.model_dump())
-    
-    class Config:
-        arbitrary_types_allowed = True
+

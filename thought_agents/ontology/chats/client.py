@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional, Any, Dict, List
 from hydra.utils import to_absolute_path
 from cryptography.fernet import Fernet
@@ -29,9 +29,12 @@ class AutogenLLMConfig(BaseModel):
     model: str = "gemini-1.5-pro"
     filter_dict: Dict
     config_list_path: str = "conf/OAI_CONFIG_LIST.txt"
-    
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = ConfigDict(
+        protected_namespaces=(),
+        populate_by_name=True,
+        arbitrary_types_allowed=True
+    )
+        
 
     def __init__(self, **data: Any):
         super().__init__(**data)

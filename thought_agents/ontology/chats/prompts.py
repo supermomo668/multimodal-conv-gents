@@ -2,7 +2,7 @@ from typing import List, Optional, Dict, Type, Union
 import pandas as pd
 from dataclasses import dataclass, field
 
-from pydantic import BaseModel, Field, field_validator, ValidationError
+from pydantic import BaseModel, Field, ConfigDict, field_validator, ValidationError
 
 from thought_agents.utils.registry import prompt_registry
 from .agents import Agent, Task
@@ -14,10 +14,13 @@ class prompt_template(BaseModel):
   task: Task
   history: Optional[List[Dict]] = None
   template: Optional[str] = Field(
-    default= 
-                                  "You are an AI-simulant of the following identity:{agents_description}. The objective at hand is: {task}")
+    default= "You are an AI-simulant of the following identity:{agents_description}. The objective at hand is: {task}")
   prompt: str
-
+  model_config = ConfigDict(
+    protected_namespaces=(),
+    populate_by_name=True,
+    arbitrary_types_allowed=True
+  )
   def __init__(self, agents:List[Agent], task, **kwargs):
     self.agents_description = ','.join([str(desc) for desc in agents])
     self.task = task
@@ -35,9 +38,7 @@ class prompt_template(BaseModel):
       """
       # Use **self.dict() to pass all instance attributes as keyword arguments
       return self.template.format(**self.model_dump())
-  class Config:
-    arbitrary_types_allowed = True
-      
+
 @prompt_registry.register("conversation")
 class conversation(prompt_template):
   agents: List[Agent]
